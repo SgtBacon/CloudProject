@@ -1,13 +1,29 @@
 <!DOCTYPE html>
+<!--HTML frontend code -->
+<!-- Basic metadata used --> 
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Vanilla JavaScript App</title>
+    <title>Translation App</title>
   </head>
 
   <body>
+    <div class="container">
+        <h1>Text translation application</h1>
+        <p>This application is hosted on Azure Static Web App, with a backend using Azure Cognitive Services for text translation</p>
+        <div class="row">
+            <div class="column">
+                <form>
+                    <div class="form-group">
+                      <label for="Text-To-Translate"><strong>Enter your text to translate:</strong></label>
+                      <textarea class="form-control" id="Text-To-Translate" rows="5"></textarea>   
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <main>
       <h1>Cloud Project</h1>
       <p>Loading content from the API: <b id="message"></b></p>
