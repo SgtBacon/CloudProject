@@ -18,10 +18,11 @@
             <div class="column">
                 <form>
                     <div class="form-group">
+                      <!--Area for User to enter text to be translated-->
                       <label for="Text-To-Translate"><strong>Enter your text to translate:</strong></label>
                       <textarea class="form-control" id="Text-To-Translate" rows="5" cols="10"></textarea>   
                     </div>
-
+                      <!--Table for User to select what language to translate text to-->
                     <div class="form-group">
                       <label for="Select-language"><strong>Translate text to:</strong></label>
                       <select class="form-control" id="select-language">
@@ -70,6 +71,7 @@
 
             <div class="col">
               <form>
+                <!--Area to output translated language-->
                 <div class="form-group" id="translator_text_response">
                   <label for="Translation_Result"><strong>Translated text:</strong></label>
                   <textarea readonly class="form-control" id="Translation_Result" rows="5"></textarea>
@@ -78,6 +80,7 @@
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -88,8 +91,9 @@
   
 </html>
 
-<script src="Program.cs">
-  document.getElementById("Translation_Result").setAttribute("Value", src)
+<!--Script to connect with Translator file and update Text Box-->
+<script src="Program.cs">   
+  var elem = document.getElementById("Translation_Result");
   
 </script>
 <!--<script>

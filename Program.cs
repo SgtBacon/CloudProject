@@ -44,7 +44,7 @@ class Program
             // Read response as a string.
             string result = await response.Content.ReadAsStringAsync();
             Console.WriteLine(result);
-            
+
         }
     }
     // Function to let Users input Text to be translated
